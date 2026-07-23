@@ -1,6 +1,6 @@
 #!/bin/bash
 #====================================================
-#	@kiritosshxd
+#	@Netxxus
 #====================================================
 IP=$(cat /etc/IP)
 cor1='\033[41;1;37m'
@@ -389,14 +389,14 @@ echo "$username $sshlimiter" >>/root/usuarios.db
 	}
 } || {
 	clear
-	echo -e "\E[44;1;37m  USER CREADO 🇦🇷⭐⭐⭐🌍 !    \E[0m"
+	echo -e "\E[44;1;37m  USER CREADO @Netxxus !    \E[0m"
         echo -e "\n Limite $sshlimiter Expira en: $gui "
-    echo -e "\n  USUARIO WS apersonal 👇🏻🌜"
+    echo -e "\n  USUARIO WS apersonal @Netxxus"
 	   echo -e "\n  recargas.personal.com.ar:80@$username:$password"
-   echo -e "\n  USUARIO UDP INETGAMING 👇🏻🌛"
+   echo -e "\n  USUARIO UDP INETGAMING @Netxxus"
      echo -e "\n $IP:1-911@$username:$password"
-   echo -e "\n  USUARIO WS PERSONAL👇🏻🌞"
+   echo -e "\n  USUARIO WS PERSONAL@Netxxus"
       echo -e "\n  ww.personal.com.ar:80@$username:$password"
      
 }
-     echo -e "Argentina🇦🇷🌎⭐⭐⭐"
+     echo -e "@Netxxus"
