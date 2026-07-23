@@ -10,34 +10,34 @@ ${comando[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
-echo -ne "  \033[1;33mEspere 333 \033[1;37m- \033[1;33m["
+echo -ne "  \033[1;31mESPERE SENTADO 🐲🏴 \033[1;37m- \033[1;31m["
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m#"
    sleep 0.1s
    done
    [[ -e $HOME/fim ]] && rm $HOME/fim && break
-   echo -e "\033[1;33m]"
+   echo -e "\033[1;31m]"
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "  \033[1;33mEspere Sentado \033[1;37m- \033[1;33m["
+   echo -ne "  \033[1;31mESPERE SENTADO 🐲🏴 \033[1;37m- \033[1;31m["
 done
-echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
+echo -e "\033[1;31m]\033[1;37m -\033[1;31m OK !\033[1;37m"
 tput cnorm
 }
 clear
-echo -e "\033[1;31m═════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "SLOWDNS MANAGER INSTALLER" ; tput sgr0
-echo -e "\033[1;31m════════════════════════════════════\033[0m"
+echo -e "\033[1;31m╔═══════════════════════════════════════╗\033[0m"
+tput setaf 7 ; tput setab 1 ; tput bold ; printf '%40s%s%-12s\n' "NETXXUS SLOWDNS INSTALLER 🐲🏴" ; tput sgr0
+echo -e "\033[1;31m╚═══════════════════════════════════════╝\033[0m"
 echo -e ""
-echo -e "    instalador en castellano AR"
-echo -e "    SlowDNS conecion mode."
+echo -e "    \033[1;37mInstalador en castellano AR\033[0m"
+echo -e "    \033[1;37mSlowDNS conecion mode.\033[0m"
 echo -e ""
-echo -e "         \033[1;33mModded/Translated by t.me/NetxxusVPN \033[1;37m"
-echo -e "\033[1;31m═════════════════════════════════════\033[0m"
+echo -e "         \033[1;31mModded/Translated by t.me/NetxxusVPN 🐲🏴 \033[1;37m"
+echo -e "\033[1;31m╠═══════════════════════════════════════╣\033[0m"
 echo ""
-echo -e "DOWLOADING DEPENDENCIES..."
+echo -e "\033[1;37mDOWNLOADING DEPENDENCIES...\033[0m"
 echo ""
 fun_att () {
 apt install ncurses-utils -y
@@ -54,13 +54,13 @@ wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/refs/heads/main/Slowdns/s
 wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/refs/heads/main/Slowdns/stopdns; chmod +x stopdns
 }
 fun_bar 'fun_att'
-echo -e "CONFIGURANDO FIREWALL..."
+echo -e "\033[1;37mCONFIGURANDO FIREWALL...\033[0m"
 echo ""
 fun_ports () {
 apt update
 }
 fun_bar 'fun_ports'
-echo -e "Ajustes CLOUDFLARE DNS..."
+echo -e "\033[1;37mAjustes CLOUDFLARE DNS...\033[0m"
 echo ""
 fun_dnscf () {
 apt update
@@ -68,12 +68,12 @@ sleep 2
 }
 fun_bar 'fun_dnscf'
 clear
-echo -e "\033[1;31m════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "SLOWDNS MANAGER INSTALLER" ; tput sgr0
-echo -e "\033[1;31m═══════════════════════════════════════\033[0m"
+echo -e "\033[1;31m╔═══════════════════════════════════════╗\033[0m"
+tput setaf 7 ; tput setab 1 ; tput bold ; printf '%40s%s%-12s\n' "NETXXUS SLOWDNS INSTALLER 🐲🏴" ; tput sgr0
+echo -e "\033[1;31m╚═══════════════════════════════════════╝\033[0m"
 echo ""
-echo -e "          \033[1;33mINSTALLACION COMPLETADO!\033[0m          "
+echo -e "          \033[1;31mINSTALLACION COMPLETADO! 🐲🏴\033[0m          "
 echo ""
-echo -e "Para abrir el menu, use el comando: \033[1;33mslowdns\033[0m"
+echo -e "\033[1;37mPara abrir el menu, use el comando: \033[1;31mslowdns\033[0m"
 cd
 rm -rf install2
