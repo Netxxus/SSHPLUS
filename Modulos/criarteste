@@ -273,7 +273,7 @@ No_Users="$(awk -F: '$3 >= '$UIDN' && $1 != "nobody" {print $1}' /etc/passwd | w
 echo -e "$bar2"
 echo -e " Numero de TOKENS: "$No_Users
 echo -e "$bar2"
-echo -ne "\n\033[1;31mARGENTINA 🇦🇷 \033[1;33m VPS1: \033[1;32mwep!\033[0m
+echo -ne "\n\033[1;31mVentas de Droplets : @Netxxus En Telegram\033[0m
 \n\033[1;31mENTER \033[1;33mpara VOLVER al \033[1;32mMENU!\033[0m"; read
 }
 #ELIMINAR EXPIRADOS
@@ -307,7 +307,7 @@ informacion_clientes () {
     echo -e ""
     echo -e "$TITLE"
     echo -e "$bar2"
-   echo -ne "\n\033[1;31mARGENTINA 🇦🇷 \033[1;33m VPS2: \033[1;32mwep!\033[0m
+   echo -ne "\n\033[1;31mVentas de Droplets : @Netxxus En Telegram\033[0m
 \n\033[1;31mENTER \033[1;33mpara VOLVER al \033[1;32mMENU!\033[0m"; read
 }
 online (){                                                               
@@ -370,7 +370,7 @@ fi
 
 echo " "
 echo " "
-echo -ne "\n\033[1;31mARGENTINA 🇦🇷 \033[1;33m VPS3: \033[1;32mwep!\033[0m
+echo -ne "\n\033[1;31mVentas de Droplets : @Netxxus En Telegram\033[0m
 \n\033[1;31mENTER \033[1;33mpara VOLVER al \033[1;32mMENU!\033[0m"; read
 }
 No_token="$(cat /etc/token/BD | wc -l)"
