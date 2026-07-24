@@ -350,7 +350,7 @@ fin="\e[0m"   # fin del color
 			echo -e "${rojo}[${cyan}3${rojo}] ${blanco}• ${amarillo}REMOVER DROPBEAR${fin}"
 			echo -e "${rojo}[${cyan}0${rojo}] ${blanco}• ${amarillo}VOLVER${fin}"
 			echo ""
-			echo -ne "${verde} QUE DESEA HACER ${amarillo}?${blanco} "
+			echo -ne "${verde} QUE HAREMOS @Netxxus ${amarillo}?${blanco} "
 			read resposta
 			if [[ "$resposta" = '1' ]]; then
 				clear
@@ -1491,7 +1491,7 @@ ${cyan}-00- ${blanco}• ${amarillo}SALIR ${fin}"
 			echo -e "\e[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${fin}"
 			echo ""
 			tput civis
-			echo -ne "${verde} QUE DESEA HACER ${amarillo}?${rojo}?${blanco} "
+			echo -ne "${verde} QUE HAREMOS @Netxxus ${amarillo}?${rojo}?${blanco} "
 			read x
 			tput cnorm
 			clear

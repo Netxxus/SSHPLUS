@@ -17,7 +17,7 @@ echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;37m • \033[1;33mAGREGAR BANNE
 echo -e "\033[1;31m[\033[1;36m2\033[1;31m]\033[1;37m • \033[1;33mBORRAR BANNER"
 echo -e "\033[1;31m[\033[1;36m3\033[1;31m]\033[1;37m • \033[1;33mVOLVER"
 echo ""
-echo -ne "\033[1;32m QUE DESEA HACER ??\033[1;31m ?\033[1;37m : "; read resp
+echo -ne "\033[1;32m QUE HAREMOS @Netxxus ??\033[1;31m ?\033[1;37m : "; read resp
 if [[ "$resp" = "1" ]]; then
 echo ""
 echo -ne "\033[1;32m CUAL MENSAJE DESEA MOSTRAR ?\033[1;31m ?\033[1;37m : "; read msg1
