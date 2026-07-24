@@ -762,7 +762,7 @@ infovps() {
         info+="<b>$(echo -e "$linha")</b>\n"
     done < <(cat $PTs)
     info+="\n<b>$total</b><i> USUARIOS   y   </i><b> $_on</b> <i>ONLINE</i>\n"
-    info+="<b>VENTA de Maquinas VPS🇦🇷🐊:</b> @diegovip7\n"
+    info+="<b>VENTA de Maquinas VPS🇦🇷🐊:</b> @Netxxus\n"
     ShellBot.sendMessage --chat_id $id_admin \
         --text "$(echo -e $info)" \
         --parse_mode html

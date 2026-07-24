@@ -62,7 +62,7 @@ fin="\e[0m"   # fin del color
 			slowdns
 		} || {
 			cd $HOME
-			wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Slowdns/install -o /dev/null
+			wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Slowdns/install -o /dev/null
 			chmod 777 install
 			./install
 		}
@@ -479,7 +479,7 @@ fin="\e[0m"   # fin del color
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Modulos/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Modulos/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
@@ -798,9 +798,9 @@ fin="\e[0m"   # fin del color
 				cd /etc/stunnel/
 				rm -rf stunnel.conf
 				rm -rf stunnel.pem
-				wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Install/cert
-				wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Install/key
-				wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Install/stunnel
+				wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Install/cert
+				wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Install/key
+				wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Install/stunnel
 				mv cert cert.pem
 				mv key key.pem
 				mv stunnel stunnel.conf
@@ -823,7 +823,7 @@ fin="\e[0m"   # fin del color
 	}
 
 	fun_openvpn() {
-		rm -rf /root/*   && wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/refs/heads/main/Modulos/ubuntu22.sh && ./ubuntu22.sh
+		rm -rf /root/*   && wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/refs/heads/main/Modulos/ubuntu22.sh && ./ubuntu22.sh
 		sleep 3
 		fun_conexao
 	}
@@ -1403,7 +1403,7 @@ unzip ddos.zip
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			echo -e "\E[44;1;37m            SSHPLUS 🇦🇷 @diegovip7               ${fin}\n"
+			echo -e "\E[44;1;37m            SSHPLUS 🇦🇷 @Netxxus               ${fin}\n"
 			echo -e "${verde}SERVICIO: ${amarillo}OPENSSH ${verde}PUERTO: ${blanco}$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="${verde}◉ "
 			[[ "$(netstat -tlpn | grep 'ws-epro' | wc -l)" != '0' ]] && {
 				echo -e "${verde}SERVICIO: ${amarillo}WS-EPRO: ${verde}PUERTO: ${blanco}$(netstat -nplt | grep 'ws-epro' | awk {'print $4'} | cut -d: -f2 | xargs)"

@@ -16,7 +16,7 @@ if [ -f /etc/os-release ]
 then
 devlike=$(cat /etc/os-release |grep LIKE |awk -F = {'print $2'})
 echo -e "\033[1;33mDerivado de OS: \033[1;37m$devlike"
-echo -e "\033[1;33mVENTA DE DROPLET 🇦🇷: \033[1;37m @vps10"
+echo -e "\033[1;33mVENTA DE DROPLET 🇦🇷: \033[1;37m @Netxxus"
 echo ""
 fi
 else

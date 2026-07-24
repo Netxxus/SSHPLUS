@@ -1,5 +1,5 @@
 #!/bin/bash
- #by @vps10
+ #by @Netxxus
  ADM_inst="/etc/SSHPlus/Slow/install" && [[ ! -d ${ADM_inst} ]] && exit
  ADM_slow="/etc/SSHPlus/Slow/Key" && [[ ! -d ${ADM_slow} ]] && exit
  info(){
