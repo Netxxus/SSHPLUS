@@ -15,7 +15,7 @@ read n
 
 case $n in
         1) clear
-wget https://raw.githubusercontent.com/vpsvip7/VPS-AGN/main/installer/web1.sh && chmod +x web1.sh && ./web1.sh
+wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/installer/web1.sh && chmod +x web1.sh && ./web1.sh
             echo -ne "\n\033[1;31mListo \033[1;37mPython3 ok  \033[1;31mInstalado! 🐲🏴\033[0m"; read
            ;;
         2) clear

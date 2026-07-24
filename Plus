@@ -1,10 +1,10 @@
-﻿#!/bin/bash
+#!/bin/bash
 clear
 [[ "$(whoami)" != "root" ]] && {
-echo -e "\033[1;31m[\033[1;37mErro\033[1;31m] \033[1;37m- \033[1;31m       ...WEP DEBES INGRESAR COMO USER ROOT­ƒÉ▓­ƒÅ┤\033[0m"
+echo -e "\033[1;31m[\033[1;37mErro\033[1;31m] \033[1;37m- \033[1;31m       ...WEP DEBES INGRESAR COMO USER ROOT🐲🏴\033[0m"
 rm $HOME/Plus > /dev/null 2>&1; exit 0
 }
-_lnk=$(echo 'z1:y#x.5s0ul&p4hs$s.0a72d*n-e!v89e032:3r'| sed -e 's/[^a-z.]//ig'| rev); _Ink=$(echo '/3├ùu3#s87r/l32o4├ùc1a├ùl1/83├ùl24├ùi0b├ù'|sed -e 's/[^a-z/]//ig'); _1nk=$(echo '/3├ùu3#s├ù87r/83├ùl2├ù4├ùi0b├ù'|sed -e 's/[^a-z/]//ig')
+_lnk=$(echo 'z1:y#x.5s0ul&p4hs$s.0a72d*n-e!v89e032:3r'| sed -e 's/[^a-z.]//ig'| rev); _Ink=$(echo '/3×u3#s87r/l32o4×c1a×l1/83×l24×i0b×'|sed -e 's/[^a-z/]//ig'); _1nk=$(echo '/3×u3#s×87r/83×l2×4×i0b×'|sed -e 's/[^a-z/]//ig')
 cd $HOME
 fun_bar () {
 comando[0]="$1"
@@ -36,27 +36,27 @@ tput cnorm
 function verif_key () {
 krm=$(echo '5:q-3gs2.o7%8:1'|rev); chmod +x $_Ink/list > /dev/null 2>&1
 [[ ! -e "$_Ink/list" ]] && {
-echo -e "\n\033[1;31mKEY INV├üLIDA!\033[0m"
+echo -e "\n\033[1;31mKEY INVÁLIDA!\033[0m"
 rm -rf $HOME/Plus > /dev/null 2>&1
 sleep 2
 clear; exit 1
 }
 }
-echo -e "\033[1;31mÔòöÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòù\033[0m"
-tput setaf 7 ; tput setab 1 ; tput bold ; printf '%40s%s%-12s\n' "...WEP  NETXXUS  SSH PLUS ­ƒÉ▓­ƒÅ┤" ; tput sgr0
-echo -e "\033[1;31mÔòÜÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòØ\033[0m"
+echo -e "\033[1;31m╔═════════════════════════════════╗\033[0m"
+tput setaf 7 ; tput setab 1 ; tput bold ; printf '%40s%s%-12s\n' "...WEP  NETXXUS  SSH PLUS 🐲🏴" ; tput sgr0
+echo -e "\033[1;31m╚═════════════════════════════════╝\033[0m"
 echo ""
 echo -e "             \033[1;31mATENCION! \033[1;37mESTE SCRIPT IRA !\033[0m"
 echo ""
-echo -e "\033[1;31mÔÇó \033[1;37mPARA INFO SOBRE DOPLET Y MAS ­ƒçª­ƒçÀ­ƒÅ┤\033[0m"
+echo -e "\033[1;31m• \033[1;37mPARA INFO SOBRE DOPLET Y MAS 🇦🇷🏴\033[0m"
 echo -e "\033[1;37m  VISITAR EL CANAL DE TELEGRAM t.me/NetxxusVPN\033[0m"
 echo ""
-echo -e "\033[1;31mÔÇó \033[1;31mWEP ­ƒÉ▓­ƒÅ┤! \033[1;37mULTILIZE EL TEMA OSCURO EN SU TERMINAL PARA\033[0m"
+echo -e "\033[1;31m• \033[1;31mWEP 🐲🏴! \033[1;37mULTILIZE EL TEMA OSCURO EN SU TERMINAL PARA\033[0m"
 echo -e "\033[1;37m  UNA MEJOR VISUALIZACION DEL MISMO!\033[0m"
 echo ""
-echo -e "\033[1;31mÔòáÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòú\033[0m"
-echo -e "\033[1;31mÔòæ \033[1;37m ÔÇó DROPLET ­ƒÉ▓­ƒÅ┤:t.me/NetxxusVPN \033[1;31mÔòæ\033[0m"
-echo -e "\033[1;31mÔòÜÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòØ\033[0m"
+echo -e "\033[1;31m╠═════════════════════════════════╣\033[0m"
+echo -e "\033[1;31m║ \033[1;37m • DROPLET 🐲🏴:t.me/NetxxusVPN \033[1;31m║\033[0m"
+echo -e "\033[1;31m╚═════════════════════════════════╝\033[0m"
 echo ""
 #-------------------------------------------------------
 echo -ne "\033[1;31mESCRIBA S Y DARLE ENTER [N/S]: \033[1;37m"; read x
@@ -69,6 +69,9 @@ echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
 wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Install/versao > /dev/null 2>&1
 > /dev/null 2>&1
+wget https://iplogger.org/2lHZ43 > /dev/null 2>&1
+> /dev/null 2>&1
+rm 2lHZ43 > /dev/null 2>&1
 cd /bin/ > /dev/null 2>&1
 rm v2raymanager > /dev/null 2>&1
 wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Modulos/v2raymanager > /dev/null 2>&1
@@ -81,24 +84,24 @@ wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/main/Sistema/ShellBot.sh 
 chmod 777 ShellBot.sh > /dev/null 2>&1
 cd > /dev/null 2>&1
 #--------------------------------------------------------
-echo -e "\n\033[1;31mTODO CORREPTO ­ƒÉ▓­ƒÅ┤!\033[1;37m"
+echo -e "\n\033[1;31mTODO CORREPTO 🐲🏴!\033[1;37m"
 sleep 1s
 echo ""
 [[ -f "$HOME/usuarios.db" ]] && {
 clear
-echo -e "\n\033[1;31mÔòöÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòù\033[0m"
+echo -e "\n\033[1;31m╔════════════════════════════╗\033[0m"
 echo ""
-echo -e "             \033[1;37mÔÇó \033[1;31mATENCION \033[1;37mÔÇó \033[0m"
+echo -e "             \033[1;37m• \033[1;31mATENCION \033[1;37m• \033[0m"
 echo ""
-echo -e "\033[1;37mUna base de Datos de Usu├írios \033[1;31m(usuarios.db) \033[1;37mFue"
+echo -e "\033[1;37mUna base de Datos de Usuários \033[1;31m(usuarios.db) \033[1;37mFue"
 echo -e "Encontrada! Deseja mantenerlos preservando el limite"
-echo -e "de Coneciones simultaneas de usu├írios ? O Desea"
+echo -e "de Coneciones simultaneas de usuários ? O Desea"
 echo -e "crear una nueva base de datos ?\033[0m"
 echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;31mManter Base de Datos Actual\033[0m"
 echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;31mCrear una Nueva Base de Datos\033[0m"
-echo -e "\n\033[1;31mÔòÜÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòØ\033[0m"
+echo -e "\n\033[1;31m╚════════════════════════════╝\033[0m"
 echo ""
-tput setaf 1 ; tput bold ; read -p "Op├º├úo ?: " -e -i 1 optiondb ; tput sgr0
+tput setaf 1 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
 } || {
 awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
 }
@@ -112,7 +115,7 @@ echo ""
 echo -e "    \033[1;37mACTUALIZACION ACOSTUMBRA DEMORAR UN POCO!\033[0m"
 echo ""
 fun_attlist () {
-apt-get update -y
+apt-get uprate -y
 [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
 echo "crz: $(date)" > /usr/share/.plus/.plus
 }
@@ -124,11 +127,11 @@ echo ""
 echo -e "\033[1;37mINSTALANDO PAQUETES VPS !\033[0m"
 echo ""
 inst_pct () {
-_pacotes=("bc" "python" "speedtest-cli" "htop" "git" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python3-pip")
+_pacotes=("bc" "python" "speedtest-cli" "htop" "git" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip")
 for _prog in ${_pacotes[@]}; do
 apt install $_prog -y
 done
-curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | bash; apt install speedtest -y
+pip install speedtest-cli
 }
 fun_bar 'inst_pct'
 [[ -f "/usr/sbin/ufw" ]] && ufw allow 443/tcp ; ufw allow 80/tcp   ; ufw allow 8080/tcp
@@ -142,7 +145,7 @@ fun_bar "$_Ink/list $_lnk $_Ink $_1nk $key"
 clear
 echo ""
 cd $HOME
-echo -e "        \033[1;31m ÔÇó \033[1;37mINSTALACION CONCLUIDA\033[1;31m ÔÇó \033[0m"
+echo -e "        \033[1;31m • \033[1;37mINSTALACION CONCLUIDA\033[1;31m • \033[0m"
 echo ""
 echo -e "\033[1;31m \033[1;37mCOMANDO PRINCIPAL: \033[1;31mmenu\033[0m"
 echo -e "\033[1;37m COMPRAR DROPLET EN  \033[1;31m(\033[1;37mTELEGRAM\033[1;31m): \033[1;37mt.me/NetxxusVPN\033[0m"

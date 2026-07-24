@@ -14,7 +14,7 @@ echo "4. LIMITAR A 14MB APROX "
 
   case $opcion in
     1)
-      wget https://raw.githubusercontent.com/vpsvip7/json24/refs/heads/main/limit_bandwidth.sh && chmod 777 limit_bandwidth.sh && ./limit_bandwidth.sh
+      wget https://raw.githubusercontent.com/Netxxus/SSHPLUS/refs/heads/main/limit_bandwidth.sh && chmod 777 limit_bandwidth.sh && ./limit_bandwidth.sh
       echo "INSTALANDO LIMITADOR"
       ;;
     2)
