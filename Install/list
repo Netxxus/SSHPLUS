@@ -83,6 +83,10 @@ echo "$_lvk" | sed -n '1 p' | cut -d' ' -f2 >/bin/versao && cat /bin/versao >/ho
 wget https://github.com/Netxxus/SSHPLUS/raw/main/Install/jq-linux64 >/dev/null 2>&1
 chmod +x jq-linux64 && mv jq-linux64 $(which jq)
 service cron restart >/dev/null 2>&1
+
+# Instalar speedtest de Ookla
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | bash
+apt install speedtest -y >/dev/null 2>&1
 service ssh restart >/dev/null 2>&1
 [[ -d /var/www/html/openvpn ]] && service apache2 restart >/dev/null 2>&1
 rm -rf $lst1/list >/dev/null 2>&1
