@@ -258,6 +258,13 @@ ${rojo}-23-${amarillo} REINICIAR SISTEMA    ${rojo}-30- ${amarillo} ACTUALIZAR S
 ${rojo}-24-${amarillo} Limpiar SERVICIOS  ${rojo}-31-${amarillo} BORRAR SCRIPT                 ${rojo} -25- ${amarillo} BLOCK TORRENT $stsf   ${rojo} -32- ${amarillo} VOLVER  
 ${rojo}-26- ${amarillo} BOT TELEGRAM $stsbot     ${rojo}-00- ${amarillo} SALIR❌           ${rojo} -27- ${amarillo} SO RE_install $stsbotteste ${rojo}"
 echo ""
+echo -e "${rojo}━━ HERRAMIENTAS EXTRA ━━\033[0m"
+echo -e "
+${rojo}-41-${amarillo} MONITOR DE RED      ${rojo}-45- ${amarillo} ESTADO DEL SISTEMA
+${rojo}-42-${amarillo} CAMBIAR PUERTO SSH  ${rojo}-46- ${amarillo} LOGS DE CONEXION
+${rojo}-43-${amarillo} BACKUP AUTOMATICO   ${rojo}-47- ${amarillo} VELOCIDAD POR USUARIO
+${rojo}-44-${amarillo} REINICIAR SERVICIOS ${rojo}-48- ${amarillo} CERTIFICADO SSL
+"
 echo -e "\e[0;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
 echo ""
 echo -ne "${verde}  ---  QUE HAREMOS ${amarillo}?${rojo}?@Netxxus${blanco} : "; read x
@@ -309,6 +316,46 @@ case "$x" in
    ;;
    32)
    menu
+   ;;
+   41)
+   clear
+   /etc/SSHPlus/Modulos/redmonitor
+   menu2
+   ;;
+   42)
+   clear
+   /etc/SSHPlus/Modulos/changesshport
+   menu2
+   ;;
+   43)
+   clear
+   /etc/SSHPlus/Modulos/autobackup
+   menu2
+   ;;
+   44)
+   clear
+   /etc/SSHPlus/Modulos/reiniciar
+   menu2
+   ;;
+   45)
+   clear
+   /etc/SSHPlus/Modulos/estadosistema
+   menu2
+   ;;
+   46)
+   clear
+   /etc/SSHPlus/Modulos/logsconexion
+   menu2
+   ;;
+   47)
+   clear
+   /etc/SSHPlus/Modulos/velocidadusuario
+   menu2
+   ;;
+   48)
+   clear
+   /etc/SSHPlus/Modulos/certssl
+   menu2
    ;;
    0|00)
    echo -e "${rojo}SALIENDO...\e[0m"

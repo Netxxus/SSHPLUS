@@ -1,0 +1,47 @@
+#!/bin/bash
+clear
+echo -e "\033[1;31m═══════════════════════════════════════\033[0m"
+echo -e "\033[1;37m  LOGS DE CONEXION - @Netxxus\033[0m"
+echo -e "\033[1;31m═══════════════════════════════════════\033[0m"
+echo ""
+echo -e "\033[1;37m  1)\033[1;33m Ultimas 20 conexiones\033[0m"
+echo -e "\033[1;37m  2)\033[1;33m Conexiones por usuario\033[0m"
+echo -e "\033[1;37m  3)\033[1;33m IPs unicas conectadas\033[0m"
+echo -e "\033[1;37m  0)\033[1;31m Volver\033[0m"
+echo ""
+echo -ne "\033[1;32m  Opcion:\033[1;37m "; read opc
+case $opc in
+    1)
+        echo ""
+        echo -e "\033[1;33m  Ultimas 20 conexiones SSH:\033[0m"
+        echo -e "\033[1;31m─────────────────────────────────────────────────\033[0m"
+        grep -i "accepted\|opened" /var/log/auth.log 2>/dev/null | tail -20 | while read line; do
+            fecha=$(echo "$line" | awk '{print $1, $2, $3}')
+            ip=$(echo "$line" | grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+            user=$(echo "$line" | grep -oP 'for \K[^\s]+' | head -1)
+            [[ -n "$user" ]] && echo -e "  \033[1;37m$fecha \033[1;33m$ip \033[1;32m$user\033[0m"
+        done
+        ;;
+    2)
+        echo ""
+        echo -ne "\033[1;32m  Usuario:\033[1;37m "; read filtro
+        echo -e "\033[1;31m─────────────────────────────────────────────────\033[0m"
+        grep -i "accepted" /var/log/auth.log 2>/dev/null | grep -i "$filtro" | tail -20 | while read line; do
+            fecha=$(echo "$line" | awk '{print $1, $2, $3}')
+            ip=$(echo "$line" | grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+            echo -e "  \033[1;37m$fecha \033[1;33m$ip\033[0m"
+        done
+        ;;
+    3)
+        echo ""
+        echo -e "\033[1;33m  IPs unicas:\033[0m"
+        echo -e "\033[1;31m─────────────────────────────────────────────────\033[0m"
+        grep -i "accepted" /var/log/auth.log 2>/dev/null | grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | sort -u | while read ip; do
+            count=$(grep -c "$ip" /var/log/auth.log 2>/dev/null)
+            echo -e "  \033[1;33m$ip \033[1;37m($count conexiones)\033[0m"
+        done
+        ;;
+    0) exit 0 ;;
+esac
+echo ""
+echo -ne "\033[1;37m  [ENTER] Volver"; read
