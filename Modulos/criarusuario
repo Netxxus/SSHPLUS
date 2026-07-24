@@ -318,10 +318,10 @@ echo -ne "\033[1;32mLimite de conexiones:\033[1;37m ";read sshlimiter
 	exit 1
 }
 total_min=$(( ${dias:-0}*1440 + ${horas:-0}*60 + ${minutos:-0} ))
-final=$(date "+%Y-%m-%d %H:%M" -d "+$total_min minutes")
+final_date=$(date "+%Y-%m-%d" -d "+$total_min minutes")
 gui=$(date "+%d/%m/%Y %H:%M" -d "+$total_min minutes")
 pass=$(openssl passwd -6 "$password" 2>/dev/null || mkpasswd -m sha-512 "$password" 2>/dev/null || perl -e 'print crypt($ARGV[0], "\$6\$".time())' "$password")
-useradd -e "$final" -M -s /bin/false -p "$pass" "$username" >/dev/null 2>&1
+useradd -e "$final_date" -M -s /bin/false -p "$pass" "$username" >/dev/null 2>&1
 echo "$password" >/etc/SSHPlus/senha/$username
 echo "$username $sshlimiter" >>/root/usuarios.db
 [[ -e /etc/openvpn/server.conf ]] && {

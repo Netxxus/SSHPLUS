@@ -26,8 +26,17 @@ else
     then
     data="\033[1;31mVencio\033[0m"
     else
-    dat="$(date -d"$datauser" '+%Y-%m-%d')"
-    data=$(echo -e "$((($(date -ud $dat +%s)-$(date -ud $(date +%Y-%m-%d) +%s))/86400)) \033[1;37mDias\033[0m")
+   rest_secs=$(( $(date -ud "$datauser" +%s) - $(date -ud "$(date +%Y-%m-%d)" +%s) ))
+   rest_days=$(( rest_secs / 86400 ))
+   rest_hours=$(( (rest_secs % 86400) / 3600 ))
+   rest_mins=$(( (rest_secs % 3600) / 60 ))
+    if [ $rest_days -gt 0 ]; then
+        data=$(echo -e "${rest_days} \033[1;37mDias\033[0m")
+    elif [ $rest_hours -gt 0 ]; then
+        data=$(echo -e "${rest_hours}h ${rest_mins}m")
+    else
+        data=$(echo -e "${rest_mins} \033[1;37mMin\033[0m")
+    fi
     fi
 fi
 Usuario=$(printf ' %-15s' "$users")
