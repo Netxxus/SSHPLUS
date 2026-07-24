@@ -398,7 +398,7 @@ case "$x" in
    4 | 04)
    clear
    sshmonitor
-   echo -ne "\n${rojo}ARGENTINA 🇦🇷 ${amarillo} VPS: ${verde}wep!\e[0m
+   echo -ne "\n${rojo}Ventas de Droplets : @Netxxus En Telegram\e[0m
 \n${rojo}ENTER ${amarillo}para VOLVER al ${verde}MENU!\e[0m"; read
    ;;      
    5 | 05)
@@ -425,7 +425,7 @@ case "$x" in
    9 | 09)
    clear
    infousers
-   echo -ne "\n${rojo}Argentina🤠 🇦🇷 ${amarillo} VPS: ${verde}wep!\e[0m
+   echo -ne "\n${rojo}Ventas de Droplets : @Netxxus En Telegram\e[0m
 \n${rojo}ENTER ${amarillo}para VOLVER al ${verde}MENU!\e[0m"; read
    ;;
    10)
