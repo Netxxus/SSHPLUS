@@ -434,7 +434,7 @@ case "$x" in
    ;;
    11)
    clear
-   apt install speedtest-cli -y && speedtest-cli --simple
+   speedtest --simple 2>/dev/null || speedtest-cli --simple 2>/dev/null || echo "Speedtest no disponible"
    echo -ne "\n${rojo}ENTER ${amarillo}para VOLVER al ${verde}MENU!\e[0m"; read
    ;;
    12)
